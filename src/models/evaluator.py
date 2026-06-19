@@ -44,12 +44,12 @@ def calibrate_thresholds(y_score_val: np.ndarray, y_true_val: np.ndarray,
         thresholds_f1_class[i] = best_t_i
 
     strategies = {
-        'Youden per class':                           thresholds_youden,
-        f'F1-macro global (t={best_t_global:.2f})':   thresholds_global,
-        'F1 per class':                               thresholds_f1_class,
-        'Fixed 0.3':                                  np.full(n_classes, 0.3),
-        'Fixed 0.4':                                  np.full(n_classes, 0.4),
-        'Fixed 0.5':                                  np.full(n_classes, 0.5),
+        'Youden per class': thresholds_youden,
+        f'F1-macro global (t={best_t_global:.2f})': thresholds_global,
+        'F1 per class': thresholds_f1_class,
+        'Fixed 0.3': np.full(n_classes, 0.3),
+        'Fixed 0.4': np.full(n_classes, 0.4),
+        'Fixed 0.5': np.full(n_classes, 0.5),
     }
 
     results_val = {}

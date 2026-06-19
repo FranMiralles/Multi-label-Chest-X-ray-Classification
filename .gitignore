@@ -1,0 +1,15 @@
+*.venv*
+
+# Results — track structure but not large binaries
+results/trained_models/*.pth
+results/trained_models/*.pt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# MedMNIST data cache
+*.npz
+chestmnist.egg-info

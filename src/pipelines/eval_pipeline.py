@@ -10,7 +10,7 @@ from medmnist import INFO
 from src.config.config import (
     DATA_FLAG, DEVICE, FINAL_MODEL_PATH, FINAL_METRICS_PATH,
 )
-from src.data.loader import get_val_loader, get_test_loader
+from src.data.dataloader import get_val_loader, get_test_loader
 from src.entity.schemas import TrainingConfig
 from src.features.transforms import get_transforms
 from src.models.architecture import build_model

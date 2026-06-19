@@ -8,7 +8,7 @@ import torch.optim as optim
 from medmnist import INFO, Evaluator
 
 from src.config.config import DATA_FLAG, DEVICE, FINAL_MODEL_PATH, OPTUNA_PARAMS_PATH
-from src.data.loader import get_dataloaders
+from src.data.dataloader import get_dataloaders
 from src.entity.schemas import TrainingConfig
 from src.features.transforms import get_transforms
 from src.models.architecture import build_model

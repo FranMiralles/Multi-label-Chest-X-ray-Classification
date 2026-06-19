@@ -1,8 +1,3 @@
-"""EDA visualizations for ChestMNIST.
-
-All plot functions accept save=True and write the figure to reports/.
-"""
-
 import os
 
 import numpy as np
@@ -11,6 +6,14 @@ import medmnist
 from medmnist import INFO
 
 from src.config.config import DATA_FLAG, DOWNLOAD, REPORTS_DIR
+from src.data.dataset import get_mnist_dataset
+
+import torch
+from monai.transforms import (
+    Compose, EnsureChannelFirst, Lambda,
+    RandAdjustContrast, RandRotate, RandZoom, Resize,
+    ScaleIntensityRangePercentiles, ToTensor,
+)
 
 info = INFO[DATA_FLAG]
 
@@ -22,8 +25,7 @@ def plot_sample_images(
     save: bool = True,
 ) -> None:
     
-    dataset = medmnist.ChestMNIST(split=split, transform=None,
-                                  download=DOWNLOAD, size=size)
+    dataset = get_mnist_dataset(split=split, transform=None, image_size=size)
     labels_map = info['label']
     rows = 2 if num_images > 5 else 1
     cols = (num_images + rows - 1) // rows
@@ -54,12 +56,6 @@ def plot_sample_images(
 
 def plot_augmented_samples(num_images: int = 10, save: bool = True) -> None:
     """Grid de muestras tras el pipeline de augmentación MONAI exploratorio."""
-    import torch
-    from monai.transforms import (
-        Compose, EnsureChannelFirst, Lambda,
-        RandAdjustContrast, RandRotate, RandZoom, Resize,
-        ScaleIntensityRangePercentiles, ToTensor,
-    )
 
     augment_tf = Compose([
         Lambda(lambda x: np.array(x).astype(np.float32)),

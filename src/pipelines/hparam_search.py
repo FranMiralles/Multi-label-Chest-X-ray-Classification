@@ -1,5 +1,3 @@
-"""Pipeline de búsqueda de hiperparámetros con Optuna."""
-
 import json
 import time
 
@@ -8,7 +6,8 @@ import torch.optim as optim
 from medmnist import INFO, Evaluator
 
 from src.config.config import DATA_FLAG, DEVICE, OPTUNA_PARAMS_PATH
-from data.dataloader import get_dataloaders
+from src.utils.log import log_run
+from src.data.dataloader import get_dataloaders
 from src.entity.schemas import OptunaConfig
 from src.features.transforms import get_transforms
 from src.models.architecture import build_model
@@ -94,34 +93,35 @@ def run_hparam_search(cfg: OptunaConfig = None) -> dict:
     if cfg is None:
         cfg = OptunaConfig()
 
-    evaluator_val = Evaluator(DATA_FLAG, split='val')
+    with log_run("hparam_search"):
+        evaluator_val = Evaluator(DATA_FLAG, split='val')
 
-    optuna.logging.set_verbosity(optuna.logging.WARNING)
-    study = optuna.create_study(
-        direction='maximize',
-        pruner=optuna.pruners.MedianPruner(n_startup_trials=5, n_warmup_steps=3),
-        sampler=optuna.samplers.TPESampler(seed=42),
-    )
-    study.optimize(
-        lambda trial: _objective(trial, evaluator_val, cfg),
-        n_trials=cfg.n_trials,
-        show_progress_bar=True,
-    )
+        optuna.logging.set_verbosity(optuna.logging.WARNING)
+        study = optuna.create_study(
+            direction='maximize',
+            pruner=optuna.pruners.MedianPruner(n_startup_trials=5, n_warmup_steps=3),
+            sampler=optuna.samplers.TPESampler(seed=42),
+        )
+        study.optimize(
+            lambda trial: _objective(trial, evaluator_val, cfg),
+            n_trials=cfg.n_trials,
+            show_progress_bar=True,
+        )
 
-    best_params = study.best_params
-    best_auc = study.best_value
+        best_params = study.best_params
+        best_auc = study.best_value
 
-    print(f"\n{'='*50}")
-    print(f"  BÚSQUEDA COMPLETADA")
-    print(f"  Mejor AUC en val: {best_auc:.4f}")
-    for k, v in best_params.items():
-        print(f"    {k}: {v}")
-    print(f"{'='*50}")
+        print(f"\n{'='*50}")
+        print(f"  BÚSQUEDA COMPLETADA")
+        print(f"  Mejor AUC en val: {best_auc:.4f}")
+        for k, v in best_params.items():
+            print(f"    {k}: {v}")
+        print(f"{'='*50}")
 
-    with open(OPTUNA_PARAMS_PATH, 'w') as f:
-        json.dump({'best_auc': best_auc, 'best_params': best_params}, f, indent=2)
-    print(f"Parámetros guardados en: {OPTUNA_PARAMS_PATH}")
+        with open(OPTUNA_PARAMS_PATH, 'w') as f:
+            json.dump({'best_auc': best_auc, 'best_params': best_params}, f, indent=2)
+        print(f"Parámetros guardados en: {OPTUNA_PARAMS_PATH}")
 
-    plot_optuna_search(study)
+        plot_optuna_search(study)
 
     return best_params
