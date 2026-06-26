@@ -1,0 +1,14 @@
+{
+  "best_auc": 0.8414657955804555,
+  "best_params": {
+    "lr": 4.135105563844663e-05,
+    "batch_size": 32,
+    "asl_gamma_neg": 2.047218525081175,
+    "asl_gamma_pos": 0.8521882698159879,
+    "asl_clip": 0.03679628855971581,
+    "weight_decay": 0.00044844143301704263,
+    "scheduler": "cosine",
+    "rotation": 20,
+    "translate": 0.0699791139000267
+  }
+}

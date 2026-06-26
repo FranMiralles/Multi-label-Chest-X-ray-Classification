@@ -1,0 +1,456 @@
+Log: /home/fmirfer/projects/ChestMNIST/results/logs/pipeline_final_20260620_055748.txt
+
+───────────────────────────────────────────────────────
+  TRIAL 1/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.33e-05 | batch=32 | wd=5.81e-05
+  ASL: γ_neg=4.39, γ_pos=0.31, clip=0.016
+  scheduler=cosine | rot=10° | translate=0.15
+    Epoch 1/8 — train... val... AUC=0.7992 | loss=0.0377 | 217.9s
+    Epoch 2/8 — train... val... AUC=0.8181 | loss=0.0372 | 202.5s
+    Epoch 3/8 — train... val... AUC=0.8277 | loss=0.0369 | 200.6s
+    Epoch 4/8 — train... val... AUC=0.8294 | loss=0.0368 | 202.4s
+    Epoch 5/8 — train... val... AUC=0.8350 | loss=0.0368 | 200.4s
+    Epoch 6/8 — train... val... AUC=0.8378 | loss=0.0366 | 200.9s
+    Epoch 7/8 — train... val... AUC=0.8369 | loss=0.0367 | 198.6s
+    Epoch 8/8 — train... val... AUC=0.8380 | loss=0.0369 | 203.9s
+  Trial 1 completado — mejor AUC: 0.8380
+
+───────────────────────────────────────────────────────
+  TRIAL 2/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=2.60e-04 | batch=32 | wd=4.32e-04
+  ASL: γ_neg=2.73, γ_pos=0.61, clip=0.052
+  scheduler=step | rot=13° | translate=0.09
+    Epoch 1/8 — train... val... AUC=0.6672 | loss=0.0478 | 202.0s
+    Epoch 2/8 — train... val... AUC=0.7111 | loss=0.0465 | 200.9s
+    Epoch 3/8 — train... val... AUC=0.7262 | loss=0.0451 | 200.4s
+    Epoch 4/8 — train... val... AUC=0.7454 | loss=0.0442 | 200.9s
+    Epoch 5/8 — train... val... AUC=0.7441 | loss=0.0442 | 201.7s
+    Epoch 6/8 — train... val... AUC=0.7397 | loss=0.0451 | 201.2s
+    Epoch 7/8 — train... val... AUC=0.7479 | loss=0.0438 | 200.2s
+    Epoch 8/8 — train... val... AUC=0.7459 | loss=0.0439 | 206.9s
+  Trial 2 completado — mejor AUC: 0.7479
+
+───────────────────────────────────────────────────────
+  TRIAL 3/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=5.95e-05 | batch=32 | wd=6.08e-04
+  ASL: γ_neg=4.06, γ_pos=1.18, clip=0.005
+  scheduler=none | rot=20° | translate=0.13
+    Epoch 1/8 — train... val... AUC=0.7923 | loss=0.0293 | 202.1s
+    Epoch 2/8 — train... val... AUC=0.7483 | loss=0.0308 | 205.1s
+    Epoch 3/8 — train... val... AUC=0.7984 | loss=0.0285 | 203.9s
+    Epoch 4/8 — train... val... AUC=0.7965 | loss=0.0283 | 202.0s
+    Epoch 5/8 — train... val... AUC=0.7925 | loss=0.0284 | 203.4s
+    Epoch 6/8 — train... val... AUC=0.7995 | loss=0.0289 | 203.8s
+    Epoch 7/8 — train... val... AUC=0.8056 | loss=0.0281 | 202.3s
+    Epoch 8/8 — train... val... AUC=0.7950 | loss=0.0282 | 202.4s
+  Trial 3 completado — mejor AUC: 0.8056
+
+───────────────────────────────────────────────────────
+  TRIAL 4/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=3.29e-05 | batch=64 | wd=3.44e-05
+  ASL: γ_neg=3.76, γ_pos=0.24, clip=0.050
+  scheduler=cosine | rot=13° | translate=0.10
+    Epoch 1/8 — train... val... AUC=0.7857 | loss=0.0403 | 237.2s
+    Epoch 2/8 — train... val... AUC=0.8058 | loss=0.0396 | 233.1s
+    Epoch 3/8 — train... val... AUC=0.8158 | loss=0.0391 | 235.9s
+    Epoch 4/8 — train... val... AUC=0.8231 | loss=0.0390 | 235.1s
+    Epoch 5/8 — train... val... AUC=0.8252 | loss=0.0389 | 233.6s
+    Epoch 6/8 — train... val... AUC=0.8262 | loss=0.0389 | 233.8s
+    Epoch 7/8 — train... val... AUC=0.8269 | loss=0.0388 | 233.4s
+    Epoch 8/8 — train... val... AUC=0.8274 | loss=0.0388 | 233.6s
+  Trial 4 completado — mejor AUC: 0.8274
+
+───────────────────────────────────────────────────────
+  TRIAL 5/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=8.49e-05 | batch=64 | wd=5.98e-04
+  ASL: γ_neg=5.10, γ_pos=1.88, clip=0.089
+  scheduler=cosine | rot=10° | translate=0.08
+    Epoch 1/8 — train... val... AUC=0.7730 | loss=0.0119 | 238.2s
+    Epoch 2/8 — train... val... AUC=0.7764 | loss=0.0119 | 233.7s
+    Epoch 3/8 — train... val... AUC=0.7689 | loss=0.0116 | 233.1s
+    Epoch 4/8 — train... val... AUC=0.7872 | loss=0.0114 | 232.6s
+    Epoch 5/8 — train... val... AUC=0.7966 | loss=0.0113 | 231.7s
+    Epoch 6/8 — train... val... AUC=0.8000 | loss=0.0112 | 234.8s
+    Epoch 7/8 — train... val... AUC=0.8053 | loss=0.0111 | 235.2s
+    Epoch 8/8 — train... val... AUC=0.8080 | loss=0.0110 | 234.8s
+  Trial 5 completado — mejor AUC: 0.8080
+
+───────────────────────────────────────────────────────
+  TRIAL 6/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.57e-05 | batch=64 | wd=1.41e-04
+  ASL: γ_neg=3.43, γ_pos=0.56, clip=0.054
+  scheduler=none | rot=18° | translate=0.07
+    Epoch 1/8 — train... val... AUC=0.7950 | loss=0.0365 | 232.5s
+    Epoch 2/8 — train... val... AUC=0.8146 | loss=0.0356 | 233.9s
+    Epoch 3/8 — train... val... AUC=0.8237 | loss=0.0354 | 234.4s
+    Epoch 4/8 — train... val... AUC=0.8281 | loss=0.0351 | 233.4s
+    Epoch 5/8 — train... val... AUC=0.8317 | loss=0.0350 | 233.5s
+    Epoch 6/8 — train... val... AUC=0.8333 | loss=0.0350 | 232.0s
+    Epoch 7/8 — train... val... AUC=0.8281 | loss=0.0356 | 233.7s
+    Epoch 8/8 — train... val... AUC=0.8361 | loss=0.0350 | 233.0s
+  Trial 6 completado — mejor AUC: 0.8361
+
+───────────────────────────────────────────────────────
+  TRIAL 7/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=1.02e-05 | batch=32 | wd=3.58e-04
+  ASL: γ_neg=4.92, γ_pos=1.54, clip=0.007
+  scheduler=step | rot=13° | translate=0.06
+    Epoch 1/8 — train... val... AUC=0.7349 | loss=0.0211 | 203.2s
+    Epoch 2/8 — train... val... AUC=0.7787 | loss=0.0202 | 200.9s
+    Epoch 3/8 — train... val... AUC=0.8001 | loss=0.0198 | 202.8s
+    Epoch 4/8 — train... val... AUC=0.8088 | loss=0.0195 | 202.8s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 8/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=3.38e-05 | batch=64 | wd=1.20e-04
+  ASL: γ_neg=4.55, γ_pos=1.77, clip=0.047
+  scheduler=step | rot=18° | translate=0.10
+    Epoch 1/8 — train... val... AUC=0.7742 | loss=0.0170 | 234.2s
+    Epoch 2/8 — train... val... AUC=0.8024 | loss=0.0165 | 233.5s
+    Epoch 3/8 — train... val... AUC=0.8176 | loss=0.0163 | 232.6s
+    Epoch 4/8 — train... val... AUC=0.8271 | loss=0.0160 | 232.0s
+    Epoch 5/8 — train... val... AUC=0.8269 | loss=0.0160 | 231.4s
+    Epoch 6/8 — train... val... AUC=0.8287 | loss=0.0160 | 232.1s
+    Epoch 7/8 — train... val... AUC=0.8323 | loss=0.0159 | 235.9s
+    Epoch 8/8 — train... val... AUC=0.8319 | loss=0.0159 | 234.4s
+  Trial 8 completado — mejor AUC: 0.8323
+
+───────────────────────────────────────────────────────
+  TRIAL 9/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=7.73e-05 | batch=32 | wd=3.14e-04
+  ASL: γ_neg=2.43, γ_pos=0.06, clip=0.064
+  scheduler=step | rot=14° | translate=0.13
+    Epoch 1/8 — train... val... AUC=0.7925 | loss=0.0562 | 200.4s
+    Epoch 2/8 — train... val... AUC=0.7968 | loss=0.0552 | 200.2s
+    Epoch 3/8 — train... val... AUC=0.8030 | loss=0.0541 | 203.5s
+    Epoch 4/8 — train... val... AUC=0.8169 | loss=0.0532 | 200.5s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 10/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=2.45e-05 | batch=64 | wd=6.33e-04
+  ASL: γ_neg=2.64, γ_pos=1.86, clip=0.081
+  scheduler=cosine | rot=19° | translate=0.10
+    Epoch 1/8 — train... val... AUC=0.7634 | loss=0.0260 | 231.3s
+    Epoch 2/8 — train... val... AUC=0.7953 | loss=0.0250 | 229.3s
+    Epoch 3/8 — train... val... AUC=0.8114 | loss=0.0246 | 233.4s
+    Epoch 4/8 — train... val... AUC=0.8151 | loss=0.0244 | 234.7s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 11/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.14e-04 | batch=32 | wd=9.08e-04
+  ASL: γ_neg=5.88, γ_pos=1.11, clip=0.027
+  scheduler=cosine | rot=10° | translate=0.15
+    Epoch 1/8 — train... val... AUC=0.5879 | loss=0.0215 | 198.5s
+    Epoch 2/8 — train... val... AUC=0.6092 | loss=0.0209 | 199.7s
+    Epoch 3/8 — train... val... AUC=0.6175 | loss=0.0210 | 201.0s
+    Epoch 4/8 — train... val... AUC=0.6145 | loss=0.0211 | 200.5s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 12/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=1.46e-04 | batch=64 | wd=1.56e-04
+  ASL: γ_neg=3.42, γ_pos=0.57, clip=0.024
+  scheduler=none | rot=16° | translate=0.05
+    Epoch 1/8 — train... val... AUC=0.8006 | loss=0.0390 | 234.0s
+    Epoch 2/8 — train... val... AUC=0.7894 | loss=0.0402 | 236.9s
+    Epoch 3/8 — train... val... AUC=0.7950 | loss=0.0396 | 235.9s
+    Epoch 4/8 — train... val... AUC=0.8047 | loss=0.0392 | 235.6s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 13/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=1.55e-05 | batch=32 | wd=2.21e-04
+  ASL: γ_neg=3.30, γ_pos=0.52, clip=0.024
+  scheduler=none | rot=17° | translate=0.07
+    Epoch 1/8 — train... val... AUC=0.7692 | loss=0.0423 | 200.6s
+    Epoch 2/8 — train... val... AUC=0.7967 | loss=0.0412 | 202.5s
+    Epoch 3/8 — train... val... AUC=0.8128 | loss=0.0406 | 202.1s
+    Epoch 4/8 — train... val... AUC=0.8213 | loss=0.0403 | 201.3s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 14/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=6.14e-05 | batch=64 | wd=2.55e-05
+  ASL: γ_neg=4.35, γ_pos=0.88, clip=0.070
+  scheduler=none | rot=15° | translate=0.15
+    Epoch 1/8 — train... val... AUC=0.7915 | loss=0.0245 | 233.8s
+    Epoch 2/8 — train... val... AUC=0.8168 | loss=0.0236 | 234.0s
+    Epoch 3/8 — train... val... AUC=0.8234 | loss=0.0234 | 233.4s
+    Epoch 4/8 — train... val... AUC=0.8319 | loss=0.0232 | 234.5s
+    Epoch 5/8 — train... val... AUC=0.8328 | loss=0.0233 | 234.4s
+    Epoch 6/8 — train... val... AUC=0.8340 | loss=0.0231 | 232.5s
+    Epoch 7/8 — train... val... AUC=0.8356 | loss=0.0233 | 228.6s
+    Epoch 8/8 — train... val... AUC=0.8348 | loss=0.0233 | 232.1s
+  Trial 14 completado — mejor AUC: 0.8356
+
+───────────────────────────────────────────────────────
+  TRIAL 15/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=1.19e-04 | batch=64 | wd=2.57e-04
+  ASL: γ_neg=5.50, γ_pos=0.30, clip=0.100
+  scheduler=none | rot=11° | translate=0.12
+    Epoch 1/8 — train... val... AUC=0.7784 | loss=0.0258 | 233.0s
+    Epoch 2/8 — train... val... AUC=0.7703 | loss=0.0261 | 234.1s
+    Epoch 3/8 — train... val... AUC=0.7849 | loss=0.0256 | 232.3s
+    Epoch 4/8 — train... val... AUC=0.7786 | loss=0.0260 | 233.9s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 16/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.14e-05 | batch=32 | wd=4.48e-04
+  ASL: γ_neg=2.05, γ_pos=0.85, clip=0.037
+  scheduler=cosine | rot=20° | translate=0.07
+    Epoch 1/8 — train... val... AUC=0.8006 | loss=0.0494 | 199.8s
+    Epoch 2/8 — train... val... AUC=0.8064 | loss=0.0490 | 200.5s
+    Epoch 3/8 — train... val... AUC=0.8173 | loss=0.0481 | 199.0s
+    Epoch 4/8 — train... val... AUC=0.8269 | loss=0.0477 | 202.3s
+    Epoch 5/8 — train... val... AUC=0.8320 | loss=0.0471 | 201.4s
+    Epoch 6/8 — train... val... AUC=0.8356 | loss=0.0467 | 202.7s
+    Epoch 7/8 — train... val... AUC=0.8380 | loss=0.0465 | 200.5s
+    Epoch 8/8 — train... val... AUC=0.8415 | loss=0.0464 | 200.2s
+  Trial 16 completado — mejor AUC: 0.8415
+
+───────────────────────────────────────────────────────
+  TRIAL 17/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=2.05e-05 | batch=32 | wd=9.47e-04
+  ASL: γ_neg=2.00, γ_pos=0.90, clip=0.036
+  scheduler=cosine | rot=20° | translate=0.11
+    Epoch 1/8 — train... val... AUC=0.7775 | loss=0.0505 | 199.4s
+    Epoch 2/8 — train... val... AUC=0.8012 | loss=0.0493 | 203.1s
+    Epoch 3/8 — train... val... AUC=0.8131 | loss=0.0484 | 200.6s
+    Epoch 4/8 — train... val... AUC=0.8206 | loss=0.0486 | 202.9s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 18/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=1.37e-04 | batch=32 | wd=7.96e-04
+  ASL: γ_neg=2.09, γ_pos=1.37, clip=0.014
+  scheduler=cosine | rot=12° | translate=0.14
+    Epoch 1/8 — train... val... AUC=0.7243 | loss=0.0492 | 202.2s
+    Epoch 2/8 — train... val... AUC=0.7576 | loss=0.0484 | 201.8s
+    Epoch 3/8 — train... val... AUC=0.7751 | loss=0.0469 | 199.1s
+    Epoch 4/8 — train... val... AUC=0.7792 | loss=0.0463 | 198.1s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 19/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=3.23e-05 | batch=32 | wd=4.72e-04
+  ASL: γ_neg=2.95, γ_pos=0.00, clip=0.040
+  scheduler=cosine | rot=15° | translate=0.09
+    Epoch 1/8 — train... val... AUC=0.7904 | loss=0.0537 | 202.0s
+    Epoch 2/8 — train... val... AUC=0.8135 | loss=0.0528 | 202.8s
+    Epoch 3/8 — train... val... AUC=0.8227 | loss=0.0521 | 202.5s
+    Epoch 4/8 — train... val... AUC=0.8236 | loss=0.0524 | 201.5s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 20/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=1.72e-05 | batch=32 | wd=7.81e-04
+  ASL: γ_neg=4.04, γ_pos=0.86, clip=0.014
+  scheduler=cosine | rot=16° | translate=0.06
+    Epoch 1/8 — train... val... AUC=0.7736 | loss=0.0321 | 203.5s
+    Epoch 2/8 — train... val... AUC=0.8011 | loss=0.0314 | 201.3s
+    Epoch 3/8 — train... val... AUC=0.8126 | loss=0.0310 | 199.1s
+    Epoch 4/8 — train... val... AUC=0.8205 | loss=0.0307 | 200.0s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 21/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.92e-05 | batch=32 | wd=5.03e-04
+  ASL: γ_neg=5.98, γ_pos=0.36, clip=0.034
+  scheduler=cosine | rot=12° | translate=0.13
+    Epoch 1/8 — train... val... AUC=0.7879 | loss=0.0279 | 202.3s
+    Epoch 2/8 — train... val... AUC=0.7918 | loss=0.0284 | 203.7s
+    Epoch 3/8 — train... val... AUC=0.7980 | loss=0.0277 | 201.9s
+    Epoch 4/8 — train... val... AUC=0.7990 | loss=0.0279 | 202.0s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 22/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.45e-05 | batch=64 | wd=1.80e-04
+  ASL: γ_neg=3.23, γ_pos=0.71, clip=0.058
+  scheduler=none | rot=18° | translate=0.07
+    Epoch 1/8 — train... val... AUC=0.7894 | loss=0.0355 | 227.3s
+    Epoch 2/8 — train... val... AUC=0.8122 | loss=0.0345 | 233.1s
+    Epoch 3/8 — train... val... AUC=0.8236 | loss=0.0341 | 234.5s
+    Epoch 4/8 — train... val... AUC=0.8258 | loss=0.0341 | 234.2s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 23/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.02e-05 | batch=32 | wd=7.43e-05
+  ASL: γ_neg=3.66, γ_pos=0.40, clip=0.041
+  scheduler=cosine | rot=19° | translate=0.08
+    Epoch 1/8 — train... val... AUC=0.7936 | loss=0.0387 | 200.1s
+    Epoch 2/8 — train... val... AUC=0.8170 | loss=0.0376 | 199.4s
+    Epoch 3/8 — train... val... AUC=0.8256 | loss=0.0373 | 200.1s
+    Epoch 4/8 — train... val... AUC=0.8293 | loss=0.0373 | 202.2s
+    Epoch 5/8 — train... val... AUC=0.8334 | loss=0.0370 | 202.2s
+    Epoch 6/8 — train... val... AUC=0.8346 | loss=0.0370 | 201.8s
+    Epoch 7/8 — train... val... AUC=0.8373 | loss=0.0370 | 200.5s
+    Epoch 8/8 — train... val... AUC=0.8367 | loss=0.0371 | 201.3s
+  Trial 23 completado — mejor AUC: 0.8373
+
+───────────────────────────────────────────────────────
+  TRIAL 24/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=9.30e-05 | batch=32 | wd=6.37e-05
+  ASL: γ_neg=4.67, γ_pos=0.39, clip=0.041
+  scheduler=cosine | rot=19° | translate=0.08
+    Epoch 1/8 — train... val... AUC=0.7993 | loss=0.0325 | 202.6s
+    Epoch 2/8 — train... val... AUC=0.8076 | loss=0.0319 | 201.9s
+    Epoch 3/8 — train... val... AUC=0.8126 | loss=0.0318 | 202.6s
+    Epoch 4/8 — train... val... AUC=0.8222 | loss=0.0315 | 203.1s
+    → PRUNED en epoch 4
+
+───────────────────────────────────────────────────────
+  TRIAL 25/25 — iniciando
+───────────────────────────────────────────────────────
+  lr=2.56e-05 | batch=32 | wd=3.08e-04
+  ASL: γ_neg=3.86, γ_pos=0.16, clip=0.017
+  scheduler=cosine | rot=20° | translate=0.11
+    Epoch 1/8 — train... val... AUC=0.7835 | loss=0.0450 | 199.4s
+    Epoch 2/8 — train... val... AUC=0.8066 | loss=0.0439 | 200.5s
+    Epoch 3/8 — train... val... AUC=0.8166 | loss=0.0436 | 200.9s
+    Epoch 4/8 — train... val... AUC=0.8260 | loss=0.0431 | 202.4s
+    → PRUNED en epoch 4
+
+==================================================
+  BÚSQUEDA COMPLETADA
+  Mejor AUC en val: 0.8415
+    lr: 4.135105563844663e-05
+    batch_size: 32
+    asl_gamma_neg: 2.047218525081175
+    asl_gamma_pos: 0.8521882698159879
+    asl_clip: 0.03679628855971581
+    weight_decay: 0.00044844143301704263
+    scheduler: cosine
+    rotation: 20
+    translate: 0.0699791139000267
+==================================================
+Parámetros guardados en: /home/fmirfer/projects/ChestMNIST/results/reports/optuna_best_params.json
+Saved: /home/fmirfer/projects/ChestMNIST/results/reports/optuna_search.png
+
+==================================================
+  CONFIGURACIÓN ENTRENAMIENTO FINAL
+  LR: 4.14e-05 | Batch: 32 | WD: 4.48e-04
+  ASL: γ_neg=2.05, γ_pos=0.85, clip=0.037
+  Scheduler: cosine | DA: rot=20°, translate=0.07
+  Epochs máx: 30 | Patience: 5
+==================================================
+
+Inicializando con pesos ImageNet...
+
+Iniciando entrenamiento final...
+
+Epoch   1/30 | Train Loss: 0.0528 | Val Loss: 0.0495 | AUC: 0.7989 | Acc: 0.9451 | LR: 4.12e-05
+  AUC mejoró (-inf → 0.7989). Guardando modelo.
+Epoch   2/30 | Train Loss: 0.0493 | Val Loss: 0.0487 | AUC: 0.8098 | Acc: 0.9470 | LR: 4.09e-05
+  AUC mejoró (0.7989 → 0.8098). Guardando modelo.
+Epoch   3/30 | Train Loss: 0.0487 | Val Loss: 0.0485 | AUC: 0.8157 | Acc: 0.9471 | LR: 4.03e-05
+  AUC mejoró (0.8098 → 0.8157). Guardando modelo.
+Epoch   4/30 | Train Loss: 0.0484 | Val Loss: 0.0479 | AUC: 0.8223 | Acc: 0.9435 | LR: 3.96e-05
+  AUC mejoró (0.8157 → 0.8223). Guardando modelo.
+Epoch   5/30 | Train Loss: 0.0480 | Val Loss: 0.0479 | AUC: 0.8205 | Acc: 0.9459 | LR: 3.86e-05
+  EarlyStopping: 1/5
+Epoch   6/30 | Train Loss: 0.0478 | Val Loss: 0.0477 | AUC: 0.8184 | Acc: 0.9474 | LR: 3.74e-05
+  EarlyStopping: 2/5
+Epoch   7/30 | Train Loss: 0.0476 | Val Loss: 0.0473 | AUC: 0.8282 | Acc: 0.9465 | LR: 3.61e-05
+  AUC mejoró (0.8223 → 0.8282). Guardando modelo.
+Epoch   8/30 | Train Loss: 0.0474 | Val Loss: 0.0479 | AUC: 0.8190 | Acc: 0.9453 | LR: 3.46e-05
+  EarlyStopping: 1/5
+Epoch   9/30 | Train Loss: 0.0472 | Val Loss: 0.0479 | AUC: 0.8230 | Acc: 0.9448 | LR: 3.29e-05
+  EarlyStopping: 2/5
+Epoch  10/30 | Train Loss: 0.0470 | Val Loss: 0.0474 | AUC: 0.8276 | Acc: 0.9453 | LR: 3.11e-05
+  EarlyStopping: 3/5
+Epoch  11/30 | Train Loss: 0.0469 | Val Loss: 0.0469 | AUC: 0.8321 | Acc: 0.9465 | LR: 2.92e-05
+  AUC mejoró (0.8282 → 0.8321). Guardando modelo.
+Epoch  12/30 | Train Loss: 0.0466 | Val Loss: 0.0473 | AUC: 0.8241 | Acc: 0.9474 | LR: 2.72e-05
+  EarlyStopping: 1/5
+Epoch  13/30 | Train Loss: 0.0465 | Val Loss: 0.0471 | AUC: 0.8310 | Acc: 0.9470 | LR: 2.51e-05
+  EarlyStopping: 2/5
+Epoch  14/30 | Train Loss: 0.0463 | Val Loss: 0.0471 | AUC: 0.8306 | Acc: 0.9454 | LR: 2.30e-05
+  EarlyStopping: 3/5
+Epoch  15/30 | Train Loss: 0.0461 | Val Loss: 0.0467 | AUC: 0.8319 | Acc: 0.9473 | LR: 2.09e-05
+  EarlyStopping: 4/5
+Epoch  16/30 | Train Loss: 0.0460 | Val Loss: 0.0469 | AUC: 0.8342 | Acc: 0.9468 | LR: 1.87e-05
+  AUC mejoró (0.8321 → 0.8342). Guardando modelo.
+Epoch  17/30 | Train Loss: 0.0458 | Val Loss: 0.0469 | AUC: 0.8296 | Acc: 0.9453 | LR: 1.66e-05
+  EarlyStopping: 1/5
+Epoch  18/30 | Train Loss: 0.0456 | Val Loss: 0.0470 | AUC: 0.8317 | Acc: 0.9458 | LR: 1.46e-05
+  EarlyStopping: 2/5
+Epoch  19/30 | Train Loss: 0.0455 | Val Loss: 0.0469 | AUC: 0.8338 | Acc: 0.9459 | LR: 1.26e-05
+  EarlyStopping: 3/5
+Epoch  20/30 | Train Loss: 0.0452 | Val Loss: 0.0467 | AUC: 0.8312 | Acc: 0.9460 | LR: 1.06e-05
+  EarlyStopping: 4/5
+Epoch  21/30 | Train Loss: 0.0450 | Val Loss: 0.0467 | AUC: 0.8330 | Acc: 0.9456 | LR: 8.85e-06
+  EarlyStopping: 5/5
+
+  Early stopping en epoch 21.
+
+  Mejor AUC: 0.8342
+  Modelo guardado en: /home/fmirfer/projects/ChestMNIST/results/trained_models/best_densenet121_final.pth
+Saved: /home/fmirfer/projects/ChestMNIST/results/reports/training_curves.png
+
+Calibrando umbrales en validación...
+
+====================================================================
+  COMPARACIÓN DE ESTRATEGIAS DE UMBRAL (validación)
+====================================================================
+Estrategia                      F1-mac  F1-mic      FN      FP
+--------------------------------------------------------------------
+Youden per class                0.2290  0.2539    2229   31555
+F1-macro global (t=0.38)        0.2690  0.3713    3570   11359
+F1 per class                    0.3136  0.3687    4056    9376
+Fixed 0.3                       0.2485  0.3111    1823   25432
+Fixed 0.4                       0.2659  0.3808    4190    8131
+Fixed 0.5                       0.2040  0.3275    5943    2416
+====================================================================
+
+  → Estrategia elegida: F1 per class
+
+Evaluando en test set...
+
+==================================================
+   RESULTADOS FINALES EN TEST SET
+   Modelo: DenseNet-121 + DA + ASL
+   Umbral: F1 per class
+==================================================
+- AUC-ROC Macro        : 0.8296
+- Hamming Score        : 0.9139
+- Mean Balanced Acc    : 0.6577
+- F1-Score Macro       : 0.3075
+- F1-Score Micro       : 0.3721
+- Accuracy Global (EMR): 0.3901
+- Falsos Negativos     : 8495
+- Falsos Positivos     : 18558
+==================================================
+
+Métricas guardadas en: /home/fmirfer/projects/ChestMNIST/results/reports/final_metrics.json
+Saved: /home/fmirfer/projects/ChestMNIST/results/reports/roc_curves_test.png
+Saved: /home/fmirfer/projects/ChestMNIST/results/reports/confusion_and_metrics.png

@@ -1,0 +1,96 @@
+Log: /home/fmirfer/projects/ChestMNIST/results/logs/hparam_search_20260619_230852.txt
+
+───────────────────────────────────────────────────────
+  TRIAL 1/5 — iniciando
+───────────────────────────────────────────────────────
+  lr=4.33e-05 | batch=32 | wd=5.81e-05
+  ASL: γ_neg=4.39, γ_pos=0.31, clip=0.016
+  scheduler=cosine | rot=10° | translate=0.15
+Downloading: "https://download.pytorch.org/models/densenet121-a639ec97.pth" to /home/fmirfer/.cache/torch/hub/checkpoints/densenet121-a639ec97.pth
+    Epoch 1/8 — train... val... AUC=0.7954 | loss=0.0381 | 203.6s
+    Epoch 2/8 — train... val... AUC=0.8130 | loss=0.0372 | 221.9s
+    Epoch 3/8 — train... val... AUC=0.8219 | loss=0.0372 | 199.4s
+    Epoch 4/8 — train... val... AUC=0.8294 | loss=0.0368 | 201.8s
+    Epoch 5/8 — train... val... AUC=0.8352 | loss=0.0365 | 201.1s
+    Epoch 6/8 — train... val... AUC=0.8360 | loss=0.0365 | 201.4s
+    Epoch 7/8 — train... val... AUC=0.8391 | loss=0.0367 | 201.6s
+    Epoch 8/8 — train... val... AUC=0.8385 | loss=0.0368 | 199.9s
+  Trial 1 completado — mejor AUC: 0.8391
+
+───────────────────────────────────────────────────────
+  TRIAL 2/5 — iniciando
+───────────────────────────────────────────────────────
+  lr=2.60e-04 | batch=32 | wd=4.32e-04
+  ASL: γ_neg=2.73, γ_pos=0.61, clip=0.052
+  scheduler=step | rot=13° | translate=0.09
+    Epoch 1/8 — train... val... AUC=0.7169 | loss=0.0455 | 199.5s
+    Epoch 2/8 — train... val... AUC=0.7200 | loss=0.0453 | 201.0s
+    Epoch 3/8 — train... val... AUC=0.7243 | loss=0.0450 | 201.1s
+    Epoch 4/8 — train... val... AUC=0.7377 | loss=0.0444 | 203.5s
+    Epoch 5/8 — train... val... AUC=0.7430 | loss=0.0445 | 201.4s
+    Epoch 6/8 — train... val... AUC=0.7267 | loss=0.0451 | 198.8s
+    Epoch 7/8 — train... val... AUC=0.7452 | loss=0.0438 | 198.9s
+    Epoch 8/8 — train... val... AUC=0.7480 | loss=0.0438 | 202.3s
+  Trial 2 completado — mejor AUC: 0.7480
+
+───────────────────────────────────────────────────────
+  TRIAL 3/5 — iniciando
+───────────────────────────────────────────────────────
+  lr=5.95e-05 | batch=32 | wd=6.08e-04
+  ASL: γ_neg=4.06, γ_pos=1.18, clip=0.005
+  scheduler=none | rot=20° | translate=0.13
+    Epoch 1/8 — train... val... AUC=0.7851 | loss=0.0293 | 199.3s
+    Epoch 2/8 — train... val... AUC=0.7857 | loss=0.0289 | 200.6s
+    Epoch 3/8 — train... val... AUC=0.7933 | loss=0.0284 | 202.6s
+    Epoch 4/8 — train... val... AUC=0.7924 | loss=0.0284 | 200.6s
+    Epoch 5/8 — train... val... AUC=0.7951 | loss=0.0283 | 200.3s
+    Epoch 6/8 — train... val... AUC=0.7934 | loss=0.0285 | 203.2s
+    Epoch 7/8 — train... val... AUC=0.7946 | loss=0.0283 | 200.6s
+    Epoch 8/8 — train... val... AUC=0.7920 | loss=0.0284 | 200.7s
+    → Early stop interno en epoch 8
+  Trial 3 completado — mejor AUC: 0.7951
+
+───────────────────────────────────────────────────────
+  TRIAL 4/5 — iniciando
+───────────────────────────────────────────────────────
+  lr=3.29e-05 | batch=64 | wd=3.44e-05
+  ASL: γ_neg=3.76, γ_pos=0.24, clip=0.050
+  scheduler=cosine | rot=13° | translate=0.10
+    Epoch 1/8 — train... val... AUC=0.7843 | loss=0.0405 | 241.6s
+    Epoch 2/8 — train... val... AUC=0.8065 | loss=0.0396 | 241.8s
+    Epoch 3/8 — train... val... AUC=0.8166 | loss=0.0393 | 240.3s
+    Epoch 4/8 — train... val... AUC=0.8209 | loss=0.0390 | 237.8s
+    Epoch 5/8 — train... val... AUC=0.8269 | loss=0.0388 | 238.9s
+    Epoch 6/8 — train... val... AUC=0.8267 | loss=0.0390 | 242.8s
+    Epoch 7/8 — train... val... AUC=0.8282 | loss=0.0389 | 241.8s
+    Epoch 8/8 — train... val... AUC=0.8284 | loss=0.0389 | 239.7s
+  Trial 4 completado — mejor AUC: 0.8284
+
+───────────────────────────────────────────────────────
+  TRIAL 5/5 — iniciando
+───────────────────────────────────────────────────────
+  lr=8.49e-05 | batch=64 | wd=5.98e-04
+  ASL: γ_neg=5.10, γ_pos=1.88, clip=0.089
+  scheduler=cosine | rot=10° | translate=0.08
+    Epoch 1/8 — train... val... AUC=0.7729 | loss=0.0117 | 233.2s
+    Epoch 2/8 — train... val... AUC=0.7707 | loss=0.0118 | 239.7s
+    Epoch 3/8 — train... val... AUC=0.7708 | loss=0.0122 | 243.9s
+    Epoch 4/8 — train... val... AUC=0.7674 | loss=0.0120 | 241.9s
+    → Early stop interno en epoch 4
+  Trial 5 completado — mejor AUC: 0.7729
+
+==================================================
+  BÚSQUEDA COMPLETADA
+  Mejor AUC en val: 0.8391
+    lr: 4.3284502212938785e-05
+    batch_size: 32
+    asl_gamma_neg: 4.394633936788146
+    asl_gamma_pos: 0.31203728088487304
+    asl_clip: 0.015599452033620266
+    weight_decay: 5.808361216819946e-05
+    scheduler: cosine
+    rotation: 10
+    translate: 0.1469909852161994
+==================================================
+Parámetros guardados en: /home/fmirfer/projects/ChestMNIST/results/reports/optuna_best_params.json
+Saved: /home/fmirfer/projects/ChestMNIST/results/reports/optuna_search.png
