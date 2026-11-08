@@ -22,6 +22,8 @@ ChestMNIST is a multi-label benchmark derived from NIH ChestX-ray14. Each image 
 ```
 ChestMNIST/
 ├── notebooks/
+│   └── presentation.pdf                   # Slides of the work
+├── notebooks/
 │   └── eda/                   # Exploratory Data Analysis
 ├── results/
 │   ├── logs/                  # Execution logs (timestamped .txt per run)
